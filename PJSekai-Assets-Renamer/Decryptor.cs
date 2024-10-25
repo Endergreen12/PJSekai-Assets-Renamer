@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// https://github.com/Hazuki-san/SekaiDecryptor/blob/main/Program.cs
 namespace PJSekai_Assets_Renamer
 {
     internal class Decryptor
