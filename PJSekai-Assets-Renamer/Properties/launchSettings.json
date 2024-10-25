@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PJSekai-Assets-Renamer": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Documents\\Analysis\\projectsekai\\files\\4.0.0\\pulled\\com.sega.pjsekai\\files\\data\"\r\n\"D:\\Documents\\Analysis\\projectsekai\\files\\4.0.0\\aba\""
+    }
+  }
+}
