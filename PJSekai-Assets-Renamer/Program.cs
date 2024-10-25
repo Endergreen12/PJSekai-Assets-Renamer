@@ -2,8 +2,6 @@
 using PJSekai_Assets_Renamer;
 using Sekai;
 
-// https://github.com/Hazuki-san/SekaiDecryptor/blob/main/Program.cs
-
 Console.WriteLine("PJSekai Assets Renamer");
 if (args.Length < 2 || args[0] == "--help")
 {
