@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Dependencies\PJSekai-Classes\PJSekai-Classes\PJSekai-Classes.csproj" />
+  </ItemGroup>
+
 </Project>

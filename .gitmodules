@@ -1,0 +1,3 @@
+[submodule "Dependencies/PJSekai-Classes"]
+	path = Dependencies/PJSekai-Classes
+	url = https://github.com/Endergreen12/PJSekai-Classes.git
