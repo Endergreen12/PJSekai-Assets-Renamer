@@ -18,6 +18,10 @@
       </PropertyGroup>
     </When>
   </Choose>
+	
+  <ItemGroup>
+    <PackageReference Include="MessagePack" Version="2.5.187" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Dependencies\PJSekai-Classes\PJSekai-Classes\PJSekai-Classes.csproj" />
