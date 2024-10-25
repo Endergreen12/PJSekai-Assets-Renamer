@@ -6,7 +6,18 @@
     <RootNamespace>PJSekai_Assets_Renamer</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<PublishSingleFile>True</PublishSingleFile>
   </PropertyGroup>
+	
+  <Choose>
+    <When Condition=" '$(Configuration)'=='Release' ">
+      <PropertyGroup>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>None</DebugType>
+        <AssemblyName>$(MSBuildProjectName)-$(RuntimeIdentifier)</AssemblyName>
+      </PropertyGroup>
+    </When>
+  </Choose>
 
   <ItemGroup>
     <ProjectReference Include="..\Dependencies\PJSekai-Classes\PJSekai-Classes\PJSekai-Classes.csproj" />
