@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  TARGET_PROJECT_DIR_NAME: Blue-Archive-Assets-Converter
+  TARGET_PROJECT_DIR_NAME: PJSekai-Assets-Renamer
   BUILD_COMMAND: dotnet publish -r $ARCH -o output
 
 jobs:
