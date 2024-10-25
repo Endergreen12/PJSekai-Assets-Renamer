@@ -1,0 +1,40 @@
+name: Build and Release
+
+on:
+  workflow_dispatch:
+
+env:
+  TARGET_PROJECT_DIR_NAME: Blue-Archive-Assets-Converter
+  BUILD_COMMAND: dotnet publish -r $ARCH -o output
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: ${{ env.TARGET_PROJECT_DIR_NAME }}
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Build for Windows x64
+      env:
+        ARCH: win-x64
+      run: ${{ env.BUILD_COMMAND }}
+    - name: Build for Linux x64
+      env:
+        ARCH: linux-x64
+      run: ${{ env.BUILD_COMMAND }}
+    - name: Release to Github
+      uses: softprops/action-gh-release@v2
+      with:
+        draft: true
+        files: |
+          ${{ env.TARGET_PROJECT_DIR_NAME }}/output/*
