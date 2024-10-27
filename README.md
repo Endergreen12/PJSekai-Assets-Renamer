@@ -2,7 +2,7 @@
 
 ## What is this
 
-This program will rename and decrypt assets of Project Sekai
+This program will rename and decrypt AssetBundles of Project Sekai
 
 ![image](https://github.com/user-attachments/assets/e0493b87-53ea-4013-86d7-5beaec60f449)
 
